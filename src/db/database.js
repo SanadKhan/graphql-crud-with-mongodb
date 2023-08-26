@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
-// const db_url = 'mongodb://localhost:27017/articles';
-const DB_URL = 'mongodb+srv://taskapp:taskapp2022@cluster0.jamaa.mongodb.net/posts';
+const DB_URL = 'mongodb+srv://<dbuser>:<dbpassword>@<MongoDB_URI>';
+//replace dbuser, dbpassword and MOngoDB_URI with actual credentials or use local database
 
 mongoose.connect(DB_URL, { useNewUrlParser: true })
 
